@@ -3,7 +3,6 @@ import { getNavItems } from "../lib/nav";
 import PageComponent from "../components/PageComponent";
 import { GetStaticProps, GetStaticPaths } from "next";
 export default PageComponent;
-export const runtime = "edge"; // 'nodejs' (default) | 'edge'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { data } = await client.queries.pageConnection();
