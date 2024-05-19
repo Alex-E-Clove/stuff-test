@@ -1,0 +1,22 @@
+{
+  "logo": "/stufflogga_gron.png",
+  "columns": [
+    {
+      "header_sv": "Rubriken",
+      "header_en": "The header",
+      "rows": [
+        {
+          "href": "#",
+          "text_sv": "Testus",
+          "text_en": "The test on english"
+        },
+        {
+          "href": "#",
+          "text_sv": "Page",
+          "text_en": "Pageen",
+          "isHeader": true
+        }
+      ]
+    }
+  ]
+}

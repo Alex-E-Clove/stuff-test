@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    /* ... */
+}
+
+@media (min-width: 1024px) {
+    .home-grid {
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+    }
+}
+
+.text-side-info-grid {
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900; /* This covers all weights from 100 to 900 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+/* Markdown CSS */
+
+.tina-markdown-container > * {
+    @apply mb-4 text-base;
+}
+
+.tina-markdown-container > h1,
+.tina-markdown-container > h2,
+.tina-markdown-container > h3,
+.tina-markdown-container > h4,
+.tina-markdown-container > h5,
+.tina-markdown-container > h6 {
+    @apply font-bold tracking-tight text-gray-900 mb-2;
+}
+
+.tina-markdown-container > h1 {
+    @apply text-3xl;
+}
+.tina-markdown-container > h2 {
+    @apply text-2xl;
+}
+.tina-markdown-container > h3 {
+    @apply text-xl;
+}
+.tina-markdown-container > h4 {
+    @apply text-lg;
+}
+.tina-markdown-container > h5 {
+    @apply text-base;
+}
+.tina-markdown-container > h6 {
+    @apply text-sm;
+}
+
+.tina-markdown-container ul {
+    @apply list-disc pl-10;
+}
+
+.tina-markdown-container ol {
+    @apply list-decimal pl-10;
+}
+
+.tina-markdown-container hr {
+    @apply border-stuff-green;
+}
+
+.tina-markdown-container blockquote {
+    @apply text-xl italic pl-4 bg-gray-100 py-4 border-s-4 border-stuff-green text-stuff-green;
+}
